@@ -3,8 +3,9 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        
         double s,imposto;
         System.out.print("Salary: ");
         s = sc.nextDouble();
@@ -23,7 +24,7 @@ public class App {
         }
         else {
             imposto = (1000*0.08) + (1500*0.18) + ((s-4500)*0.28);
-            System.out.printf("R$ %.2f",imposto);
+            System.out.printf("Valor do imposto de renda: R$ %.2f",imposto);
 
         }
         sc.close();
